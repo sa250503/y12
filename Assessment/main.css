@@ -1,0 +1,38 @@
+body {
+    background-color: #fff;
+}
+
+h1 {
+    color: #B21C1C;
+}
+.navbar {
+    background-color: #B21C1C;
+}
+.navjumps {
+    background-color: #435042;
+}
+#icon {
+    width: 200px ;
+}
+.landing-grid {
+    display: inline-block;
+}
+
+.white {
+    color: #fff;
+}
+
+.church-section {
+    background-image: url("images/img_places_church.png");
+    color: #fff;
+}
+
+.mansion-section {
+    background-image: url("images/img_places_mansion.png");
+    color: #fff;
+}
+
+.gorge-section {
+    background-image: url("images/img_places_mountain.png");
+    color: #fff;
+}
