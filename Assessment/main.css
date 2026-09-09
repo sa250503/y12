@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Inter');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed');
 
+/* Universal */ 
 html, body {
     margin: 0; padding: 0;
-}
-
-body#landing {
-    background-color: #fff;
-    background-image: url(images/BGsun.png);
-    background-repeat: no-repeat;
-    background-position: 120% 50%;
 }
 
 img {
@@ -17,12 +11,7 @@ img {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    /* user-drag: none; */
-}
-
-img.landing-icon {
-    width: 25%;
-    /*padding-left: 20%*/
+    user-drag: none;
 }
 
 h1, h3 {
@@ -37,6 +26,61 @@ p {
     text-align: center;
 }
 
+
+/* Landing page styling */
+body#landing {
+    background-color: #fff;
+    background-image: url(images/BGsun.png);
+    background-repeat: no-repeat;
+    background-position: 120% 50%;
+}
+
+
+img.landing-icon {
+    width: 25%;
+}
+
+.landing-grid {
+    display: grid;
+    text-align: center; 
+    gap: 2%;
+    grid-template-columns: 300px 300px 300px;
+
+}
+div#test {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+div.landing-grid div {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background-color: #FFFCED;
+    border-style: solid;
+    border-color: #B4B09D;
+    border-width: medium;
+    text-align: center;
+}
+
+a.button {
+    text-align: center;
+    font-family: 'Inter';
+    background-color: #B21C1C;
+    color: white;
+    padding: 20px 34px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* Navigation bar */
 section.navbar {
     background-color: #B21C1C;
 }
@@ -77,6 +121,7 @@ img#icon {
     font-weight: 1000;
 }
 
+/* 'Places' page */ 
 body#places {
     background-color: #fff;
     background-image: url(images/BGcity.png);
@@ -87,11 +132,9 @@ body#places {
 
 section#place-list {
     color: white;
-    /* position: absolute; */
 }
 
 img#store-icon {
-    /*padding: 3% 0% 0% 40%;*/
     width: 70px;
     margin: 0;
     position: relative;
@@ -118,7 +161,6 @@ section.location-section {
 
 section.location-section h2 {
     font-family: 'IBM Plex Sans Condensed';
-    /* padding: 100px 0px 0px 100px; */
     padding: 6% 0px 0px 6%;
     line-height: 100px;
     font-size: 70px;
@@ -135,64 +177,15 @@ section.location-section p {
 section#church {
     background-image: url("images/img_places_church.png");
     background-size: cover;
-}
-
-section#mansion {
+} section#mansion {
     background-image: url("images/img_places_mansion.png");
     background-size: cover;
-}
-
-section#gorge {
+} section#gorge {
     background-image: url("images/img_places_mountain.png");
     background-size: cover;
 }
 
-.landing-grid {
-    display: grid;
-    text-align: center; 
-    gap: 2%;
-    grid-template-columns: 300px 300px 300px;
-    /*margin: auto;*/
-}
-div#test {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-/*div.landing-grid ul li {
-    display: inline-block;
-    width: 300px;
-    height: 400px;
-    background-color: #FFFCED;
-    border-style: solid;
-    border-color: #B4B09D;
-    border-width: medium;
-}*/
-
-div.landing-grid div {
-    display: inline-block;
-    width: 300px;
-    height: 400px;
-    background-color: #FFFCED;
-    border-style: solid;
-    border-color: #B4B09D;
-    border-width: medium;
-    text-align: center;
-}
-
-a.button {
-    text-align: center;
-    background-color: #B21C1C;
-    color: white;
-    padding: 20px 34px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    }
-
+/* 'Info' page */ 
 body#info {
     background-color: #fff;
     background-image: url(images/BGbook.png);
@@ -204,9 +197,6 @@ body#info {
 p  {
     font-family: 'Inter'
 }
-/*div.info-text {
-    display: inline;
-} */
 
 .grid-info {
     display: grid;
@@ -226,6 +216,7 @@ img.info-image {
     text-align: center;
 }
 
+/* 'People' page */ 
 body#people {
     background-color: #fff;
     background-image: url(images/BGbanner.png);
