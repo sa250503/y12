@@ -44,9 +44,11 @@ img.landing-icon {
     display: grid;
     text-align: center; 
     gap: 2%;
-    grid-template-columns: 300px 300px 300px;
-
+    /* grid-template-columns: 300px 300px 300px; */
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
 }
+
 div#test {
     display: flex;
   justify-content: center;
@@ -57,8 +59,8 @@ div#test {
 
 div.landing-grid div {
     display: inline-block;
-    width: 300px;
-    height: 400px;
+    /* width: 300px; 
+    height: 400px; */
     background-color: #FFFCED;
     border-style: solid;
     border-color: #B4B09D;
